@@ -26,7 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- =======================================================
   * Template Name: Serenity
@@ -60,121 +59,133 @@
     <a class="btn-getstarted" href="login.html">S'inscrire</a>
   </div>
 </header>
+<style>
+.card {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.card:hover {
+  background-color: #8bb83b;
+  transform: scale(1.05);
+  border-color: #8bb83b;
+  color: white;
+}
+.card-title {
+  font-weight: bold;
+}
+.container {
+  margin-top: 2rem;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #8bb83b;
+}
+.card:hover .icon {
+  color: white;
+}
 
+</style>
   <main class="main">
-
-  <!-- Page Title -->
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="category-projet section">
+      <!-- Page Title -->
   <div class="page-title light-background">
     <!-- Section Title -->
     <div class="container section-title">
-      <h2>Des Projets 100% Pratiques</h2>
+      <h2>Categories</h2>
       </p>
     </div><!-- End Section Title -->
   </div><!-- End Page Title -->
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="category-projet section">
     <div class="container my-5">
-
-      <div class="row g-4">
-          <div class="col-md-4">
-              <div class="card category-card">
-                  <img src="assets/img/Catalogue/catalogue-1.jpg" alt="Cybersécurité">
-                  <div class="card-body">
-                      <h5 class="fw-bold"><a href="CategoryProjet/cybersecurity.html" target="_blank">Cybersécurité</a></h5>
-                      <p style="font-style: italic;">
-                        Plongez dans des projets concrets pour maîtriser les défis de la sécurité informatique. Configurez des pare-feux, analysez des incidents, implémentez des solutions SIEM, IDS/IPS, et apprenez à détecter et répondre aux cyberattaques. Des scénarios réels pour devenir un expert en cybersécurité.
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                          <span class="project-count"><i class="bi bi-kanban"></i> 12 projets</span>
-                          <a href="CategoryProjet/cybersecurity.html" class="btn projet-section">Accéder aux scénarios pratiques</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-4">
-              <div class="card category-card">
-                  <img src="assets/img/Catalogue/catalogue-2.jpg" alt="Réseau Informatique">
-                  <div class="card-body">
-                      <h5 class="fw-bold"><a href="#" target="_blank">Réseau Informatique</a></h5>
-                      <p style="font-style: italic;">
-                        Découvrez des projets pratiques pour concevoir, configurer et sécuriser des infrastructures réseau. Travaillez sur des routeurs, commutateurs, protocoles de communication, et résolvez des problèmes de connectivité. Devenez un as de l’optimisation et de la gestion des réseaux, des LAN aux WAN.
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                          <span class="project-count"><i class="bi bi-kanban"></i> 10 projets</span>
-                          <a href="#" class="btn projet-section">Accéder aux scénarios pratiques</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-4">
-              <div class="card category-card">
-                  <img src="assets/img/Catalogue/catalogue-3.jpg" alt="Cloud & DevOps">
-                  <div class="card-body">
-                      <h5 class="fw-bold"><a href="#" target="_blank">Systèmes et Administration </a></h5>
-                      <p style="font-style: italic;">
-                        Apprenez à gérer et maintenir des systèmes d’exploitation (Windows, Linux, etc.) et des serveurs. Automatisez des tâches, gérez les utilisateurs, les permissions, et assurez la disponibilité des services. Des projets pour maîtriser l’administration système en conditions réelles.>
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                          <span class="project-count"><i class="bi bi-kanban"></i> 8 projets</span>
-                          <a href="#" class="btn projet-section">Accéder aux scénarios pratiques</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-md-4">
-              <div class="card category-card">
-                  <img src="assets/img/Catalogue/catalogue-4.png" alt="Réseau Informatique">
-                  <div class="card-body">
-                      <h5 class="fw-bold"><a href="#" target="_blank">Cloud et DevOps </a></h5>
-                      <p style="font-style: italic;">
-                        Explorez des projets dédiés au déploiement, à la gestion et à l’optimisation des infrastructures cloud (AWS, Azure, GCP, etc.). Apprenez à utiliser des outils DevOps comme Docker, Kubernetes, Ansible, et CI/CD pour automatiser et sécuriser vos déploiements.
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                          <span class="project-count"><i class="bi bi-kanban"></i> 10 projets</span>
-                          <a href="#" class="btn projet-section">Accéder aux scénarios pratiques</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-md-4">
-              <div class="card category-card">
-                  <img src="assets/img/Catalogue/Catalogue-5.jpg" alt="Réseau Informatique">
-                  <div class="card-body">
-                      <h5 class="fw-bold"><a href="#" target="_blank">Bases de Données</a></h5>
-                      <p style="font-style: italic;">
-                        Plongez dans des projets pour concevoir, administrer et optimiser des bases de données (SQL, NoSQL). Apprenez à modéliser des données, écrire des requêtes complexes, et sécuriser l’accès aux données. Des cas pratiques pour devenir un expert en gestion et analyse de données.
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                          <span class="project-count"><i class="bi bi-kanban"></i> 10 projets</span>
-                          <a href="#" class="btn projet-section">Accéder aux scénarios pratiques</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-md-4">
-              <div class="card category-card">
-                  <img src="assets/img/Catalogue/catalogue-6.jpg" alt="Réseau Informatique">
-                  <div class="card-body">
-                      <h5 class="fw-bold"><a href="#" target="_blank">Virtualisation - SAN/NAS</a></h5>
-                      <p style="font-style: italic;">
-                        Découvrez des projets pour maîtriser la virtualisation (VMware, Hyper-V, etc.) et le stockage en réseau (SAN/NAS). Apprenez à créer et gérer des machines virtuelles, optimiser les ressources, et sécuriser les environnements virtualisés. Des scénarios pour maîtriser les infrastructures modernes.
-                      </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <span class="project-count"><i class="bi bi-kanban"></i> 10 projets</span>
-                          <a href="#" class="btn projet-section">Accéder aux scénarios pratiques</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
+      <div class="row g-3">
+        <div class="col-md-4">
+            <a href="cybersecurity.html" class="text-decoration-none">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <i class="fas fa-user-shield icon"></i>
+                        <div>
+                            <h5 class="card-title">Cybersécurité</h5>
+                            <p class="card-text">Réalisez des projets pour sécuriser des systèmes, détecter des intrusions et protéger des données sensibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="networking.html" class="text-decoration-none">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <i class="fas fa-network-wired icon"></i>
+                        <div>
+                            <h5 class="card-title">Réseau Informatique</h5>
+                            <p class="card-text">Configurez des réseaux, diagnostiquez des pannes et optimisez des infrastructures grâce à des projets pratiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="sysadmin.html" class="text-decoration-none">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <i class="fas fa-server icon"></i>
+                        <div>
+                            <h5 class="card-title">Systèmes et Administration</h5>
+                            <p class="card-text">Administrez des serveurs, automatisez des tâches et gérez des systèmes d'exploitation avec des projets concrets.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="cloud-devops.html" class="text-decoration-none">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <i class="fas fa-cloud icon"></i>
+                        <div>
+                            <h5 class="card-title">Cloud & DevOps</h5>
+                            <p class="card-text">Déployez des infrastructures cloud, automatisez des pipelines CI/CD et utilisez Docker et Kubernetes dans des projets réels.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="databases.html" class="text-decoration-none">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <i class="fas fa-database icon"></i>
+                        <div>
+                            <h5 class="card-title">Bases de Données</h5>
+                            <p class="card-text">Concevez des bases de données, optimisez des requêtes SQL et gérez des solutions NoSQL à travers des projets pratiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="virtualization.html" class="text-decoration-none">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-code icon"></i>
+                        <div>
+                            <h5 class="card-title">Virtualisation</h5>
+                            <p class="card-text">Configurez des environnements virtualisés, utilisez des conteneurs Docker et optimisez des ressources matérielles avec des projets concrets.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
   </section><!-- /Portfolio Section -->
 
   </main>

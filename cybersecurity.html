@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -20,14 +20,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="../assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/theprojets.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Serenity
@@ -43,7 +44,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
   
-      <a href="../index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Pratik IT</h1>
@@ -52,15 +53,15 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero">Accueil</a></li>
-          <li><a href="../portfolio.html" class="active">Catalogue de Projets</a></li>
-          <li><a href="../prepa-certif.html">Prepa Certif</a></li>
-          <li><a href="../services.html">Historique des projets</a></li>
-          <li><a href="../about.html">A propos</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="portfolio.html" class="active">Catalogue de Projets</a></li>
+          <li><a href="prepa-certif.html">Prepa Certif</a></li>
+          <li><a href="services.html">Historique des projets</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted" href="../login.html">S'inscrire</a>
+      <a class="btn-getstarted" href="login.html">S'inscrire</a>
     </div>
   </header>
 
@@ -76,75 +77,61 @@
 
     <!-- Recent Posts Section -->
     <section id="detail-category" class="detail-projet section">
-      <div class="container mt-4">
+      <div class="container my-3">
         
-        <div class="row mb-3">
+        <input type="text" id="searchInput" class="form-control search-bar" placeholder="Rechercher un projet..." onkeyup="filterProjects()">
+        
+        <div class="row g-3" id="projectList">
             <div class="col-md-4">
-                <input type="text" id="searchInput" class="form-control" placeholder="Rechercher un projet...">
-            </div>
-            <div class="col-md-3">
-                <select id="techFilter" class="form-select">
-                    <option value="">Toutes les technologies</option>
-                    <option value="MikroTik">MikroTik</option>
-                    <option value="pfSense">pfSense</option>
-                    <option value="Linux">Linux</option>
-                </select>
-            </div>
-            <div class="col-md-3">
-                <select id="typeFilter" class="form-select">
-                    <option value="">Tous types</option>
-                    <option value="pratique">Projet Pratique</option>
-                    <option value="academique">Projet Académique</option>
-                    <option value="entreprise">Projet Entreprise</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <button id="resetButton" class="btn btn-boutom w-100">Actualiser</button>
-            </div>
-        </div>
-        
-        <div class="row" id="projectList">
-            <div class="col-md-4 project-card" data-tech="MikroTik" data-type="pratique">
-                <div class="card">
-                  <a href="Projets/configuration vpn mikrotik.html">
-                    <img src="../assets/img/blog/blog-2.jpg" class="card-img-top" alt="Projet MikroTik">
+                <div class="card p-3">
+                    <a href="CategoryProjet/">
+                        <img src="assets/img/Prepa-certif/comptiasec.png" alt="Détection des Intrusions">
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Configuration d'un routeur MikroTik</h5>
-                  </a>
-                        <p class="card-text">Mise en place d'un réseau sécurisé avec MikroTik.</p>
-                        <a href="#" class="fw-bold">Voir plus...</a>
+                        <h5 class="card-title"><a href="Configuration vpn.html" class="text-decoration-none">Détection des Intrusions</a></h5>
+                        <p class="card-text">Mise en place d'un IDS/IPS pour identifier et prévenir les cyberattaques en temps réel.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Configuration vpn.html" class="btn btn-primary">Voir plus</a>
+                        <span class="stars">★★★★★</span>
+                        <span class="views">1,230 vues</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4 project-card" data-tech="pfSense" data-type="entreprise">
-                <div class="card">
-                  <a href="#">
-                    <img src="../assets/img/blog/blog-3.jpg" class="card-img-top" alt="Projet pfSense">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <a href="#">
+                        <img src="malware-analysis.jpg" alt="Analyse de Malware">
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Firewall et VPN avec pfSense</h5>
-                  </a>
-                        <p class="card-text">Installation et configuration d'un pare-feu avec pfSense.</p>
-                        <a href="#" class="fw-bold">Voir plus...</a>
+                        <h5 class="card-title"><a href="#" class="text-decoration-none">Analyse de Malware</a></h5>
+                        <p class="card-text">Étude et désassemblage de logiciels malveillants pour comprendre leur fonctionnement et leurs impacts.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Voir plus</a>
+                        <span class="stars">★★★★☆</span>
+                        <span class="views">980 vues</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4 project-card" data-tech="Linux" data-type="academique">
-                <div class="card">
-                  <a href="#">
-                    <img src="../assets/img/blog/blog-1.jpg" class="card-img-top" alt="Projet Linux">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <a href="#">
+                        <img src="network-security.jpg" alt="Sécurisation Réseau">
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Serveur Linux sécurisé</h5>
-                  </a>
-                        <p class="card-text">Déploiement et sécurisation d'un serveur sous Linux.</p>
-                        <a href="#" class="fw-bold">Voir plus...</a>
+                        <h5 class="card-title"><a href="#" class="text-decoration-none">Sécurisation Réseau</a></h5>
+                        <p class="card-text">Implémentation d’un pare-feu avancé pour filtrer le trafic réseau et empêcher les intrusions.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Voir plus</a>
+                        <span class="stars">★★★★☆</span>
+                        <span class="views">750 vues</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+      </div>
     </section><!-- /Recent Posts Section -->
 
   </main>
@@ -219,18 +206,19 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theprojets.js"></script>
 
 </body>
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Serenity Bootstrap Template</title>
+  <title>Blog Details - AgriCulture Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,17 +26,18 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/theprojets.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Serenity
-  * Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body class="about-page">
+<body class="blog-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -53,82 +54,99 @@
           <li><a href="portfolio.html">Catalogue de Projets</a></li>
           <li><a href="prepa-certif.html">Prepa Certif</a></li>
           <li><a href="services.html">Historique des projets</a></li>
-          <li><a href="about.html" >A propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted" href="login.html" class="active">S'inscrire</a>
+      <a class="btn-getstarted" href="login.html">S'inscrire</a>
     </div>
   </header>
 
   <main class="main">
+    <section>
+      <div class="container">
+        <a href="index.html" class="btn btn-secondary mb-3">← Retour aux projets</a>
 
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Se connecter</h2>
-      </div><!-- End Section Title -->
-    </div><!-- End Page Title -->
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Image du projet -->
+                <img src="assets/img/Prepa-certif/comptiasec.png" class="project-image mb-3" alt="Image du projet">
 
+                <!-- Onglets -->
+                <ul class="nav nav-tabs" id="projectTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#description">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#correction">Correction</a>
+                    </li>
+                </ul>
 
-<!-- Section: Design Block -->
-<section class="">
+                <!-- Contenu des onglets -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="description">
+                        <h3>Description du projet</h3>
+                        <p>
+                          L’objectif de ce projet est d’implémenter un système de détection d’intrusions (IDS) avec Suricata pour analyser le trafic réseau en temps réel. Ce système permettra d’identifier et d’alerter sur d’éventuelles menaces comme les scans de ports, attaques DDoS, injections SQL, etc.
+                          Nous allons aussi intégrer un tableau de bord avec Kibana pour visualiser les alertes et obtenir des rapports détaillés sur les événements de sécurité.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="correction">
+                        <h3>Correction</h3>
+                        <p>Utilisation de Snort et Suricata pour analyser le trafic réseau et détecter les intrusions.</p>
+                    </div>
+                </div>
+            </div>
 
-  <div class="card-login">
-    <!-- Onglets pour switcher entre Connexion et Inscription -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Connexion</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Inscription</button>
-        </li>
-    </ul>
+            <div class="col-md-4">
+                <!-- Nouvelle section : Détails du Projet -->
+                <div class="project-info">
+                    <h4><i class="fas fa-info-circle"></i> Détails du Projet</h4>
+                    
+                    <div class="project-detail">
+                        <i class="fas fa-tools"></i>
+                        <span><strong>Technologies :</strong> Snort, Suricata, ELK Stack, Zeek, Metasploit</span>
+                    </div>
+                    
+                    <div class="project-detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span><strong>Date de création :</strong> Janvier 2025</span>
+                    </div>
 
-    <!-- Contenu des onglets -->
-    <div class="tab-content mt-3" id="myTabContent">
-        <!-- Formulaire de Connexion -->
-        <div class="tab-pane fade show active" id="login" role="tabpanel">
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Votre email" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Mot de passe</label>
-                    <input type="password" class="form-control" placeholder="Votre mot de passe" required>
-                </div>
-                <button type="submit" class="btn btn-primary-p">Se connecter</button>
-            </form>
-        </div>
+                    <div class="project-detail">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span><strong>Statut :</strong> Terminé ✅</span>
+                    </div>
 
-        <!-- Formulaire d'Inscription -->
-        <div class="tab-pane fade" id="register" role="tabpanel">
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Nom</label>
-                    <input type="text" class="form-control" placeholder="Votre nom" required>
+                    <div class="project-detail">
+                        <i class="fas fa-star"></i>
+                        <span><strong>Note :</strong> ★★★★★ (1,230 vues)</span>
+                    </div>
+
+                    <a href="rapport-projet.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i> Télécharger le rapport
+                    </a>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Votre email" required>
+
+                <!-- Projets similaires -->
+                <h4 class="mt-4"><i class="fas fa-folder-open"></i> Projets Similaires</h4>
+                <div class="similar-project">
+                    <img src="malware-analysis.jpg" alt="Analyse de Malware">
+                    <a href="#">Analyse de Malware</a>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Mot de passe</label>
-                    <input type="password" class="form-control" placeholder="Créer un mot de passe" required>
+                <div class="similar-project">
+                    <img src="network-security.jpg" alt="Sécurisation Réseau">
+                    <a href="#">Sécurisation Réseau</a>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Confirmer le mot de passe</label>
-                    <input type="password" class="form-control" placeholder="Confirmer votre mot de passe" required>
+                <div class="similar-project">
+                    <img src="pentesting.jpg" alt="Pentesting d’Applications Web">
+                    <a href="#">Pentesting d’Applications Web</a>
                 </div>
-                <button type="submit" class="btn btn-primary-p">S'inscrire</button>
-            </form>
+            </div>
         </div>
     </div>
-</div>
-  </section><!-- /Team Section -->
+    </section>
   </main>
 <br>
   <footer id="footer" class="footer dark-background">
